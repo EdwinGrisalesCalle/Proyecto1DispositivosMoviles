@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+        <explode
+            android:duration="2000"/>
+    </transitionSet>
+
+    <!-- Estados Entrada-Salida  -->
+    <item android:name="android:windowEnterTransition">@transition/explode_transition</item>
+    <item android:name="android:windowExitTransition">@transition/explode_transition</item>
+
+    <!-- Estados Reingreso-Retorno  -->
+    <item android:name="android:windowReenterTransition">@transition/fade_transition</item>
+    <item android:name="android:windowReturnTransition">@transition/fade_transition</item>
+
+    <!-- Estados entrada-salida -->
+    <item android:name="android:windowSharedElementEnterTransition">@transition/shared_explode</item>
+    <item android:name="android:windowSharedElementExitTransition">@transition/shared_explode</item>
+
+    <!-- Estados ingreso-retorno -->
+    <item android:name="android:windowSharedElementReenterTransition">@transition/shared_fade</item>
+    <item android:name="android:windowSharedElementReturnTransition">@transition/shared_fade</item>
+
+</set>

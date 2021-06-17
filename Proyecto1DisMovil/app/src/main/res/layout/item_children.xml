@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="378dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/container_bg_children" />
+
+    <TextView
+        android:id="@+id/taxonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="taxonId"
+        app:layout_constraintStart_toEndOf="@+id/imageViewChildren"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txtDescends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="taxonId"
+        app:layout_constraintStart_toEndOf="@+id/taxonId2"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="71dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:text="taxonId"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/phylum"
+        app:layout_constraintTop_toBottomOf="@+id/taxonId4" />
+
+    <TextView
+        android:id="@+id/taxonId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Numero de descendientes: "
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/taxonId"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/taxonId4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="4dp"
+        android:text="Status"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/kingdom"
+        app:layout_constraintTop_toBottomOf="@+id/taxonId2" />
+
+    <TextView
+        android:id="@+id/kingdom"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:text="kingdom"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageViewChildren"
+        app:layout_constraintTop_toBottomOf="@+id/taxonId"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <TextView
+        android:id="@+id/phylum"
+        android:layout_width="131dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="12dp"
+        android:text="phylum"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageViewChildren"
+        app:layout_constraintTop_toBottomOf="@+id/kingdom"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <ImageView
+        android:id="@+id/imageViewChildren"
+        android:layout_width="67dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

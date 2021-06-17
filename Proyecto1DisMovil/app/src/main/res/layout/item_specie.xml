@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="175dp">
+
+    <ImageView
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/container_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageSpecie"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cc" />
+
+    <TextView
+        android:id="@+id/textNameSpecie"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Nombre de la especie"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageSpecie"
+        app:layout_constraintTop_toTopOf="@+id/container" />
+
+    <TextView
+        android:id="@+id/specieName"
+        android:layout_width="136dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="name"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/imageSpecie"
+        app:layout_constraintTop_toBottomOf="@+id/textNameSpecie" />
+
+    <TextView
+        android:id="@+id/scientificName"
+        android:layout_width="136dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="scientificName"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/imageSpecie"
+        app:layout_constraintTop_toBottomOf="@+id/textScientific" />
+
+    <TextView
+        android:id="@+id/textScientific"
+        android:layout_width="135dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Nombre cientifico"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageSpecie"
+        app:layout_constraintTop_toBottomOf="@+id/specieName" />
+
+    <TextView
+        android:id="@+id/textTaxonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="TaxonID"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textNameSpecie"
+        app:layout_constraintTop_toTopOf="@+id/container" />
+
+    <TextView
+        android:id="@+id/idTaxon"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="idTaxon"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/specieName"
+        app:layout_constraintTop_toBottomOf="@+id/textTaxonId" />
+</androidx.constraintlayout.widget.ConstraintLayout>
